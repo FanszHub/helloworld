@@ -12,5 +12,5 @@ func hello(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", hello)
-	endless.ListenAndServe(":8000", nil)
+	endless.ListenAndServe(":80", nil)
 }
